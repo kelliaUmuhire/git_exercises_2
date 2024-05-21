@@ -343,11 +343,35 @@ Deleted tag 'v1.0' (was c495cbe)
 ### Exercise 9
 
 ```bash
-
+git_exercises_2> git add .
+git_exercises_2> git commit -m "chore: added .gitignore and updated README"
+[main 55366c1] chore: added .gitignore and updated README
+ 2 files changed, 124 insertions(+)
+ create mode 100644 .gitignore
+git_exercises_2> git push
+Enumerating objects: 10, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 1.41 KiB | 482.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+To https://github.com/kelliaUmuhire/git_exercises_2.git
+   2b66b4e..04f5781  main -> main
 ```
 
 ### Exercise 10
 
 ```bash
-
+git_exercises_2> git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (2/2), 980 bytes | 23.00 KiB/s, done.
+From https://github.com/kelliaUmuhire/git_exercises_2
+   c495cbe..2b66b4e  main       -> origin/main
+Merge made by the 'ort' strategy.
+ test5.md | 1 +
+ 1 file changed, 1 insertion(+)
 ```
