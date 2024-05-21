@@ -228,3 +228,126 @@ git_exercises_2> git branch -m ft/new-branch-from-commit ft/improved-branch-name
 git_exercises_2> git log --oneline
 git_exercises_2> git checkout 9fff4ce
 ```
+
+## Part 3
+
+### Exercise 1
+
+```bash
+git_exercises_2> git stash
+Saved working directory and index state WIP on main: 4f5e96f docs: Added part 2 terminal history
+```
+
+### Exercise 2
+
+```bash
+git_exercises_2> git stash pop
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   test5.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Dropped refs/stash@{0} (7179e173047d4a196e123c44222ec17198a391c2)
+```
+
+### Exercise 3
+
+```bash
+git_exercises_2> git checkout ft/new-branch-from-commit
+Switched to branch 'ft/new-branch-from-commit'
+git_exercises_2> git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 316 bytes | 63.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/kelliaUmuhire/git_exercises_2.git
+git_exercises_2> git checkout main
+Switched to branch 'main'
+git_exercises_2> git commit -m "chore: update test1.md"
+[main c495cbe] chore: update test1.md
+git_exercises_2> git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 237 bytes | 118.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/kelliaUmuhire/git_exercises_2.git
+   4f5e96f..c495cbe  main -> main
+git_exercises_2> git checkout ft/new-branch-from-commit
+Switched to branch 'ft/new-branch-from-commit'
+Your branch is up to date with 'origin/ft/new-branch-from-commit'.
+git_exercises_2> git add .
+git_exercises_2> git commit -m "fix: resolve conflict"
+[ft/new-branch-from-commit 37f4d83] fix: resolve conflict
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+git_exercises_2> git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 270 bytes | 270.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/kelliaUmuhire/git_exercises_2.git
+   a58d320..37f4d83  ft/new-branch-from-commit -> ft/new-branch-from-commit
+```
+
+### Exercise 4
+
+```bash
+git_exercises_2> git mergetool
+```
+
+### Exercise 5
+
+```bash
+git_exercises_2> git checkout 9e831c8
+Note: switching to '9e831c8'.
+```
+
+### Exercise 6
+
+```bash
+Created .gitignore
+Added '/tmp'
+```
+
+### Exercise 7
+
+```bash
+git_exercises_2> git checkout main
+Previous HEAD position was 9e831c8 docs: update README.md
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+git_exercises_2> git tag v1.0
+```
+
+### Exercise 8
+
+```bash
+git_exercises_2> git tag
+v1.0
+git_exercises_2> git tag -d v1.0
+Deleted tag 'v1.0' (was c495cbe)
+```
+
+### Exercise 9
+
+```bash
+
+```
+
+### Exercise 10
+
+```bash
+
+```
